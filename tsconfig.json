@@ -6,6 +6,7 @@
     "emitDeclarationOnly": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strict": true,
 
     "target": "es2023",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],

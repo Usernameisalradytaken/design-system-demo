@@ -1,0 +1,10 @@
+{
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "dependsOn": ["^build"]
+    }
+  },
+  "cacheDirectory": ".cache/nx",
+  "analytics": false
+}

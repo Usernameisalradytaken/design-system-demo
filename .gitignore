@@ -67,3 +67,6 @@ AGENTS.md
 /rds-workflow/
 ARCHITECTURE.md
 skills-lock.json
+
+.nx/
+.cache/

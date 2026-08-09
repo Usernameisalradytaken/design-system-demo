@@ -1,3 +1,4 @@
+#!/bin/sh
 echo "-- Running prettier"
 yarn format
 echo "-- Finished running prettier"
