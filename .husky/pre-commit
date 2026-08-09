@@ -1,11 +1,11 @@
-  echo "-- Running prettier"
-  yarn format
-  echo "-- Finished running prettier"
-  echo "-- Running linter"
-  yarn lint-staged
-  echo "-- Finished running linter"
-  echo "-- Running lerna build to generate .d.ts & .js files"
-  yarn build
-  echo "-- Finished running lerna build to generate .d.ts files"
-  echo "-- Adding generated or updated files to commit"
-  git add .
+echo "-- Running prettier"
+yarn format
+echo "-- Finished running prettier"
+echo "-- Running linter"
+yarn lint-staged
+echo "-- Finished running linter"
+echo "-- Running lerna build to generate .d.ts & .js files"
+yarn build
+echo "-- Finished running lerna build to generate .d.ts files"
+echo "-- Adding generated or updated files to commit"
+git add .
