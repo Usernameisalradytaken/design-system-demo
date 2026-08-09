@@ -1,0 +1,66 @@
+{
+  "name": "design-system",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "lerna run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "publish": "lerna run build && lerna publish",
+    "new": "node ./tools/new-component/index.js && yarn install",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=22.0"
+  },
+  "workspaces": [
+    "src/components/*"
+  ],
+  "dependencies": {
+    "vue": "^3.5.40"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@storybook/addon-a11y": "^10.5.7",
+    "@storybook/addon-docs": "^10.5.7",
+    "@storybook/addon-styling-webpack": "^3.0.2",
+    "@storybook/addon-vitest": "^10.5.7",
+    "@storybook/vue3-vite": "^10.5.7",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vitest/browser-playwright": "latest",
+    "@vitest/coverage-v8": "latest",
+    "@vue/tsconfig": "^0.9.1",
+    "commitizen": "^4.3.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-vue": "^10.10.0",
+    "globals": "^17.9.0",
+    "husky": "^9.1.7",
+    "inquirer": "^14.0.2",
+    "lerna": "^10.0.0",
+    "lint-staged": "16",
+    "lodash": "^4.18.1",
+    "playwright": "latest",
+    "prettier": "^3.9.6",
+    "storybook": "^10.5.7",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.66.0",
+    "vite": "^8.2.0",
+    "vitest": "latest",
+    "vue-eslint-parser": "^10.4.1",
+    "vue-tsc": "^3.3.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+"extends": "../../../tsconfig.json",
+"include": [ "./*.vue" ],
+"compilerOptions": {
+"declaration": true,
+"emitDeclarationOnly": true
+}
+}
