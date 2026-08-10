@@ -4,7 +4,7 @@
 "type": "module",
 "private": true,
 "repository": {
-"type":"git",
+"type":"git"
 },
 "author": {
 "name": "{%authorName%}",

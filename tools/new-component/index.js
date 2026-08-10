@@ -1,8 +1,10 @@
-import { prompt } from "inquirer";
-import { camelCase, upperFirst, kebabCase } from "lodash";
+import inquirer from "inquirer";
+import { camelCase, upperFirst, kebabCase } from "lodash-es";
 import { readdirSync, readFileSync, mkdir, writeFileSync } from "fs";
 import { resolve } from "path";
 import { exec } from "child_process";
+
+const { prompt } = inquirer;
 
 // string constants
 const BASE_PATH_TEMPLATES = "./tools/new-component/templates";
@@ -38,7 +40,7 @@ const questions = [
     },
   },
   {
-    type: "list",
+    type: "select",
     name: "component_type",
     message: "Please select the component type: ",
     choices: componentTypes,

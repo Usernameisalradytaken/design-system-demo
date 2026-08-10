@@ -16,12 +16,14 @@
     "prepare": "husky"
   },
   "engines": {
-    "node": ">=22.0"
+    "node": ">=22.14",
+    "yarn": ">=3.8"
   },
   "workspaces": [
     "src/components/*"
   ],
   "dependencies": {
+    "lodash-es": "^4.18.1",
     "vue": "^3.5.40"
   },
   "devDependencies": {
@@ -32,6 +34,7 @@
     "@storybook/addon-vitest": "^10.5.7",
     "@storybook/vue3-vite": "^10.5.7",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^24.13.3",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vitest/browser-playwright": "latest",
