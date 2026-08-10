@@ -1,6 +1,6 @@
 {
   "name": "@design-system/button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "build": "vue-tsc && tsc --project tsconfig.index.json"
