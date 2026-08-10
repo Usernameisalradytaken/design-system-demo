@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from "@storybook/addon-docs/blocks";
+import * as HeaderStories from "./Header.stories";
+
+<Meta of={HeaderStories} />
+
+# Header
+
+A simple application header built with Vue 3 and Tailwind CSS.
+
+The header uses the shared `@design-system/button` package for its sign-in action.
+
+## Default
+
+<Canvas of={HeaderStories.Default} />
+
+## Custom title
+
+<Canvas of={HeaderStories.CustomTitle} />
+
+## Props
+
+<Controls of={HeaderStories.Default} />

@@ -11,7 +11,7 @@ Add desc. here.
 
 ### Using yarn
 
-`yarn add --registry=https://npm.edpl.us @design-system/{%componentDir%}`
+`yarn add --registry=http://localhost:4873/ @design-system/{%componentDir%}`
 
 ## Usage
 
