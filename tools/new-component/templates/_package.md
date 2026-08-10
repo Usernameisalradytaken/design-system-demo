@@ -2,7 +2,6 @@
 "name": "{%componentName%}",
 "version": "0.0.0",
 "type": "module",
-"private": true,
 "repository": {
 "type":"git"
 },
