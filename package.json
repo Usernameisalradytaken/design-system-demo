@@ -9,7 +9,7 @@
     "build": "lerna run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "publish": "lerna run build && lerna publish",
+    "publish": "lerna run build && lerna publish --include-merged-tags",
     "new": "node ./tools/new-component/index.js && yarn install",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
